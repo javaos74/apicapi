@@ -78,6 +78,8 @@ apic_opts = [
                help=("Algorithm used by APIC for signature verification")),
     cfg.StrOpt('signature_hash_type',
                help=("Hashing algorithm to use for calculating signature")),
+    cfg.StrOpt('tenant_network_name',
+               help=("Tenant network name, if missing common/{system_id}_shared is used")),           
 ]
 
 APP_PROFILE_REGEX = "[a-zA-Z0-9_.:-]+"
